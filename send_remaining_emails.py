@@ -28,8 +28,7 @@ I’d greatly appreciate any insights you could share. If you’re open to it, I
 
 Thank you so much!
 Kai
-NUS Computing
-SG +65 9776 3340 | VN +84 3693 89242"""
+XXX"""
 
     # Escape quotes for AppleScript
     esc_body = body.replace('"', '\\"')
@@ -41,7 +40,7 @@ SG +65 9776 3340 | VN +84 3693 89242"""
         set newMessage to make new outgoing message with properties {{subject:"{esc_subject}", content:"{esc_body}"}}
         tell newMessage
             make new to recipient at end of to recipients with properties {{email address:{{address:"{recipient_email}"}}}}
-            make new cc recipient at end of cc recipients with properties {{email address:{{address:"joelleo@comp.nus.edu.sg"}}}}
+            make new cc recipient at end of cc recipients with properties {{email address:{{address:"abc@email.com"}}}}
             send
         end tell
     end tell
